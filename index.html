@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="daily work ">
+    <meta name="keywords" content="Unit0-09">
+    <meta name="author" content="Tong Gong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" ="text/css" href="stylesheet.css">
+    <title> </title>
+  </head>
+  <body>
+    <p class="font">Tong Gong </p>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <br>
+    <button id="mybtn">Event Listener</button>
+    <p id="demo2"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+        }
+      document.getElementById("mybtn").addEventListener("click", displayDate);
+      function displayDate() {
+        document.getElementById("demo2").innerHTML = Date();
+        }
+    </script>
+  </body>
+</html>
